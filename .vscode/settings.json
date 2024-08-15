@@ -10,7 +10,6 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "files.autoSave": "afterDelay",
-  
 
   // explorer
   "explorer.compactFolders": false,
@@ -18,7 +17,7 @@
   // workbench
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Min Dark",
+  "workbench.colorTheme": "html color theme",
 
   // prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
