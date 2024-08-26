@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="pt-br" class="">
+<html lang="pt-br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,26 +29,26 @@
 
       <ul>
         <li>
-          <a href="#">Inscrever-se no meu curso</a>
+          <a href="#" id="openCourseModal">Inscrever-se no meu curso</a>
         </li>
         <li>
-          <a href="#">Baixar meu e-book</a>
+          <a href="#" id="openModal">Baixar meu e-book</a>
         </li>
         <li>
-          <a href="#">Ver meu portifólio</a>
+          <a href="https://github.com/aghiot321/" target="_blank" >Ver meu portifólio</a>
         </li>
         <li>
-          <a href="#" target="_blank">Conheça minha empresa</a>
+          <a href="https://github.com/aghiot321/" target="_blank">Conheça minha empresa</a>
         </li>
       </ul>
       <div id="social-links">
-        <a href="#" target="_blank">
+        <a href="https://github.com/aghiot321/" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a href="#" target="_blank">
+        <a href="https://www.instagram.com/aghiot_022/" target="_blank">
           <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        <a href="#" target="_blank">
+        <a href="https://youtube.com/@thiagobarroso6510?si=5YmGKxHUTgc57maR" target="_blank">
           <ion-icon name="logo-youtube"></ion-icon>
         </a>
         <a href="#">
@@ -60,6 +61,88 @@
         <a href="#" target="_blank">Thiago Silva</a>
       </footer>
     </div>
+
+    <!-- Modal para o E-book -->
+<div id="ebookModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Insira seu email para receber o e-book:</p>
+      <form id="ebookForm">
+          <input type="email" id="userEmail" placeholder="Seu email" required>
+          <p id="emailError" class="error"></p>
+          <button type="submit">Enviar</button>
+      </form>
+      <p id="responseMessage"></p>
+  </div>
+</div>
+
+<!-- Novo Modal para o Curso -->
+<div id="courseModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Insira seu email para saber mais sobre meu curso:</p>
+      <form id="courseForm">
+          <input type="email" id="courseEmail" placeholder="Seu email" required>
+          <p id="courseEmailError" class="error"></p>
+          <button type="submit">Enviar</button>
+      </form>
+      <p id="courseResponseMessage"></p>
+  </div>
+</div>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- Modal -->
+    <div id="ebookModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Insira seu email para receber o e-book:</p>
+        <form id="ebookForm">
+          <input type="email" id="userEmail" placeholder="Seu email" required>
+          <p id="emailError" class="error"></p>
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="responseMessage"></p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+
+    <!-- CursoModal -->
+    <div id="cursoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Insira seu email para receber o curso:</p>
+        <form id="cursoForm">
+          <input type="email" id="userEmail" placeholder="Seu email" required>
+          <p id="emailError" class="error"></p>
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="responseMessage"></p>
+      </div>
+    </div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
